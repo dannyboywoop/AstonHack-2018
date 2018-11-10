@@ -73,7 +73,7 @@ public class SelectPlaySurface : MonoBehaviour {
     }
 
     public void SurfaceSelected() {
-        GameObject newGameMap = Instantiate(GameMap, SelectedPlaneAnchor.transform.position, Quaternion.identity, transform);
+        GameObject newGameMap = Instantiate(GameMap, SelectedPlaneAnchor.transform.position - new Vector3(0.5f, 0f, 0.5f), Quaternion.identity, transform);
         newGameMap.transform.parent = SelectedPlaneAnchor.transform;
 
         ContinueSearching = false;
