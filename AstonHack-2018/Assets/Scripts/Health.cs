@@ -16,7 +16,6 @@ public class Health : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (currentHealth <= 0) {
-			Debug.Log("Died!");
 			// Play death animation
 			// ToDo
 
@@ -26,7 +25,6 @@ public class Health : MonoBehaviour {
 	}
 
 	public void damage(int damageValue) {
-		Debug.Log("Taking damage");
 		currentHealth -= damageValue;
 	}
 }
