@@ -32,7 +32,7 @@ public class SelectPlaySurface : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        /*
         if (!ContinueSearching) {
             return;
         }
@@ -52,30 +52,11 @@ public class SelectPlaySurface : MonoBehaviour {
         if (Input.touchCount < 1 || ( touch = Input.GetTouch(0) ).phase != TouchPhase.Began) {
             return;
         }
-
-        TrackableHit hit;
-        TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon;
-
-        if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit)) {
-            // Use hit pose and camera pose to check if hittest is from the
-            // back of the plane, if it is, no need to create the anchor.
-            ConfirmationPanel.SetActive(false);
-            if (( hit.Trackable is DetectedPlane ) &&
-                Vector3.Dot(FirstPersonCamera.transform.position - (hit.Pose.position*100),
-                    hit.Pose.rotation * Vector3.up) < 0) {
-                Debug.Log("Hit at back of the current DetectedPlane");
-            }
-            else {
-                SelectedPlaneAnchor = hit.Trackable.CreateAnchor(hit.Pose);
-                SelectedPlaneAnchor.transform.position = new Vector3(SelectedPlaneAnchor.transform.position.x * 100, 0f, SelectedPlaneAnchor.transform.position.y * 100);
-                ConfirmationPanel.SetActive(true);
-            }
-        }
+        */
     }
 
     public void SurfaceSelected() {
-        GameObject newGameMap = Instantiate(GameMap, SelectedPlaneAnchor.transform.position - new Vector3(0.5f, 0f, 0.5f), Quaternion.identity, transform);
-        newGameMap.transform.parent = SelectedPlaneAnchor.transform;
+        GameObject newGameMap = Instantiate(GameMap, FirstPersonCamera.transform.position - (new Vector3(50f,0f,50f)), Quaternion.identity, transform);
 
         ContinueSearching = false;
         ConfirmationPanel.SetActive(false);
