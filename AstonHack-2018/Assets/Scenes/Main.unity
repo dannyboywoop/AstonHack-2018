@@ -805,7 +805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba15860c19406ee4e88fcfdbb71f0f7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Boulder: {fileID: 1066396857695592, guid: eeedfcf1669400a4ca3a1df4a62ac21f, type: 2}
+  Boulder: {fileID: 1861991304793728, guid: eeedfcf1669400a4ca3a1df4a62ac21f, type: 2}
   FirstPersonCamera: {fileID: 487819886}
 --- !u!1 &1004700087
 GameObject:
