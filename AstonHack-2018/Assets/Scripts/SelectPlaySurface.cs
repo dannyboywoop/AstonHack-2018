@@ -61,12 +61,13 @@ public class SelectPlaySurface : MonoBehaviour {
             // back of the plane, if it is, no need to create the anchor.
             ConfirmationPanel.SetActive(false);
             if (( hit.Trackable is DetectedPlane ) &&
-                Vector3.Dot(FirstPersonCamera.transform.position - hit.Pose.position,
+                Vector3.Dot(FirstPersonCamera.transform.position - (hit.Pose.position*100),
                     hit.Pose.rotation * Vector3.up) < 0) {
                 Debug.Log("Hit at back of the current DetectedPlane");
             }
             else {
                 SelectedPlaneAnchor = hit.Trackable.CreateAnchor(hit.Pose);
+                SelectedPlaneAnchor.transform.position = new Vector3(SelectedPlaneAnchor.transform.position.x * 100, 0f, SelectedPlaneAnchor.transform.position.y * 100);
                 ConfirmationPanel.SetActive(true);
             }
         }
