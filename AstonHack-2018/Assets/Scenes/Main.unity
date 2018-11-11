@@ -332,7 +332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &214080558
 RectTransform:
   m_ObjectHideFlags: 0
@@ -792,6 +792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FirstPersonCamera: {fileID: 487819886}
   ConfirmationPanel: {fileID: 1573905993}
+  WeaponPannel: {fileID: 214080557}
   GameMap: {fileID: 1972023695057618, guid: 491d5de25bce5f64192b07ca184c479e, type: 2}
 --- !u!114 &842070795
 MonoBehaviour:
