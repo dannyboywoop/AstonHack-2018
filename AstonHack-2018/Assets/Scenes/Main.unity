@@ -300,7 +300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &300415456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,7 +454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &600673546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,13 +522,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FirstPersonCamera: {fileID: 487819886}
-  DetectedPlanePrefab: {fileID: 1654175882956584, guid: 6a35c744e5010405c847fad90282d2be,
-    type: 2}
-  SearchingForPlaneUI: {fileID: 1965650454}
-  PlaneGeneratorObject: {fileID: 600673545}
   ConfirmationPanel: {fileID: 1573905993}
   GameMap: {fileID: 1972023695057618, guid: 491d5de25bce5f64192b07ca184c479e, type: 2}
-  PointCloudObject: {fileID: 300415455}
 --- !u!1 &1004700087
 GameObject:
   m_ObjectHideFlags: 0
