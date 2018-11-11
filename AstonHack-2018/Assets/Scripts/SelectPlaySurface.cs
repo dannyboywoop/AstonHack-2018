@@ -9,6 +9,8 @@ public class SelectPlaySurface : MonoBehaviour {
 
     public GameObject ConfirmationPanel;
 
+    public GameObject WeaponPannel;
+
     public GameObject GameMap;
 
     private bool ContinueSearching = true;
@@ -63,6 +65,7 @@ public class SelectPlaySurface : MonoBehaviour {
 
         ContinueSearching = false;
         ConfirmationPanel.SetActive(false);
+        WeaponPannel.SetActive(true);
 
         //PlaneGeneratorObject.SetActive(false);
         //PointCloudObject.SetActive(false);
