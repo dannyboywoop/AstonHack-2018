@@ -12,14 +12,25 @@ public class Boulder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(GetComponent<Rigidbody>().velocity == Vector3.zero) {
+            Invoke("DespawnBoulder", 3);
+        }
+        if(transform.position.y < -10) {
+            DespawnBoulder();
+        }
 	}
+
 	void OnCollisionEnter (Collision col)
     {
         if(col.gameObject.tag == "enemy")
         {
-            col.gameObject.GetComponent<Health>().damage(damageValue);
+            Destroy(col.gameObject);
+            //col.gameObject.GetComponent<Health>().damage(damageValue);
         }
+    }
+
+    void DespawnBoulder() {
+        Destroy(transform.gameObject);
     }
 	
 }

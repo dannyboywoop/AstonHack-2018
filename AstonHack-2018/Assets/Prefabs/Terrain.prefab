@@ -256,7 +256,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1972023695057618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 385.0929, y: 271.85037, z: 106.892456}
+  m_LocalPosition: {x: 904.4991, y: 341.4999, z: -820.4708}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4369388471296838}
@@ -604,7 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b036af6f86f384fa6c73015cffe2fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPreFab: {fileID: 1074370147708508, guid: ffea8a71c062cbe4a8c14f770e5de86b,
+  enemyPreFab: {fileID: 1839212441223074, guid: f02caf84eaa0eea4ea5162a796e2983a,
     type: 2}
   goal: {fileID: 1168094034005204}
 --- !u!114 &114356229521545716
@@ -618,7 +618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b036af6f86f384fa6c73015cffe2fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPreFab: {fileID: 1074370147708508, guid: ffea8a71c062cbe4a8c14f770e5de86b,
+  enemyPreFab: {fileID: 1839212441223074, guid: f02caf84eaa0eea4ea5162a796e2983a,
     type: 2}
   goal: {fileID: 1168094034005204}
 --- !u!114 &114711060374584452
@@ -632,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b036af6f86f384fa6c73015cffe2fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPreFab: {fileID: 1074370147708508, guid: ffea8a71c062cbe4a8c14f770e5de86b,
+  enemyPreFab: {fileID: 1839212441223074, guid: f02caf84eaa0eea4ea5162a796e2983a,
     type: 2}
   goal: {fileID: 1168094034005204}
 --- !u!114 &114759009329208522
@@ -671,7 +671,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.083333336
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: a1ec91925a54ac5458de758cf1123a07, type: 2}
 --- !u!114 &114913994579107614
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b036af6f86f384fa6c73015cffe2fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPreFab: {fileID: 1074370147708508, guid: ffea8a71c062cbe4a8c14f770e5de86b,
+  enemyPreFab: {fileID: 1839212441223074, guid: f02caf84eaa0eea4ea5162a796e2983a,
     type: 2}
   goal: {fileID: 1168094034005204}
 --- !u!114 &114924939395316710
@@ -699,7 +699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b036af6f86f384fa6c73015cffe2fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPreFab: {fileID: 1074370147708508, guid: ffea8a71c062cbe4a8c14f770e5de86b,
+  enemyPreFab: {fileID: 1839212441223074, guid: f02caf84eaa0eea4ea5162a796e2983a,
     type: 2}
   goal: {fileID: 1168094034005204}
 --- !u!154 &154582149032605686
